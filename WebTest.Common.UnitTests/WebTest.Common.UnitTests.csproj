@@ -46,6 +46,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WebTest.Business\WebTest.Business.csproj">
+      <Project>{e56cb0c2-6ee8-414a-b60b-d64955980c23}</Project>
+      <Name>WebTest.Business</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WebTest.Model\WebTest.Model.csproj">
       <Project>{6d7a4054-8d19-4111-9b43-d1b6f6671da7}</Project>
       <Name>WebTest.Model</Name>
