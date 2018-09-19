@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebTest.Model;
 using WebTest.Business;
+using WebTest.Repositories;
 
 namespace WebTest.Common.UnitTests
 {
@@ -25,12 +26,25 @@ namespace WebTest.Common.UnitTests
         }
 
         [TestMethod]
-        public void ListPersonTest()
+        public void PeopleManagerTest()
         {
             PeopleManager peopleManager = new PeopleManager();
 
             bool isListOfPersons = true;
             if (!peopleManager.GetAll().GetType().Equals(typeof(List<Person>)))
+            {
+                isListOfPersons = false;
+            }
+            Assert.IsTrue(isListOfPersons);
+        }
+
+        [TestMethod]
+        public void PeopleRepositoryTest()
+        {
+            PeopleRepository peopleRepository = new PeopleRepository();
+
+            bool isListOfPersons = true;
+            if (!peopleRepository.GetAll().GetType().Equals(typeof(List<Person>)))
             {
                 isListOfPersons = false;
             }

@@ -54,6 +54,10 @@
       <Project>{6d7a4054-8d19-4111-9b43-d1b6f6671da7}</Project>
       <Name>WebTest.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WebTest.Repositories\WebTest.Repositories.csproj">
+      <Project>{6c9570b1-2dc5-4274-b92c-4d04c3688bdf}</Project>
+      <Name>WebTest.Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
