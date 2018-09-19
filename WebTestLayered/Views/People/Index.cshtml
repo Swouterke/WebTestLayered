@@ -1,0 +1,19 @@
+﻿@model List<WebTest.Model.Person>
+
+<h1>Persons</h1>
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Number</td>
+    </tr>
+
+@foreach (var person in Model)
+{
+    <tr>
+        <td>@person.Id</td>
+        <td>@person.Name</td>
+        <td>@person.Number</td>
+    </tr>
+}
+</table>
