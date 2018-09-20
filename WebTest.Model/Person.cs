@@ -12,6 +12,8 @@ namespace WebTest.Model
         public string Name { get; set; }
         public int Number { get; set; }
 
+        public Person() { }
+
         //public Person(Guid id, string name, int number)
         //{
         //    Id = id;
