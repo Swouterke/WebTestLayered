@@ -64,8 +64,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="CodeTemplates\DbHelper.ttinclude" />
-    <None Include="CodeTemplates\Manager.ttinclude" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
