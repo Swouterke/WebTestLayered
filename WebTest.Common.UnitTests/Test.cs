@@ -16,7 +16,7 @@ namespace WebTest.Common.UnitTests
         [TestMethod]
         public void PersonTest()
         {
-            Person person = new Person(new Guid("6E5E76E6 - 5C00 - 424E-9789 - 002855F4B03E"), "jeanke", 3);
+            Person person = new Person(new Guid("6C4F118C-82EC-4989-8194-01D3406DF7BC"), "jeanke", 3);
             bool isPerson = true;
             if (!person.GetType().Equals(typeof(Person))) 
             {
