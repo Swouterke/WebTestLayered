@@ -16,7 +16,7 @@ namespace WebTest.Common.UnitTests
         [TestMethod]
         public void PersonTest()
         {
-            Person person = new Person(4, "jeanke", 3);
+            Person person = new Person(new Guid("6E5E76E6 - 5C00 - 424E-9789 - 002855F4B03E"), "jeanke", 3);
             bool isPerson = true;
             if (!person.GetType().Equals(typeof(Person))) 
             {
@@ -26,9 +26,9 @@ namespace WebTest.Common.UnitTests
         }
 
         [TestMethod]
-        public void PeopleManagerTest()
+        public void PersonManagerTest()
         {
-            PeopleManager peopleManager = new PeopleManager();
+            PersonManager peopleManager = new PersonManager();
 
             bool isListOfPersons = true;
             //if (!peopleManager.GetAll().GetType().Equals(typeof(List<Person>)))
@@ -39,9 +39,9 @@ namespace WebTest.Common.UnitTests
         }
 
         [TestMethod]
-        public void PeopleRepositoryTest()
+        public void PersonRepositoryTest()
         {
-            PeopleRepository peopleRepository = new PeopleRepository();
+            PersonRepository peopleRepository = new PersonRepository();
 
             bool isListOfPersons = true;
             //if (!peopleRepository.GetAll().GetType().Equals(typeof(List<Person>)))
