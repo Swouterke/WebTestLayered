@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using WebTest.Model;
 
-namespace WebTest.Repositories.Interfaces
+namespace WebTest.Business.Interfaces
 {
-    public interface IRepositoryBase
+    public interface IPersonManager
     {
         List<Person> GetAll();
     }

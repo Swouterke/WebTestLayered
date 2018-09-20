@@ -31,10 +31,10 @@ namespace WebTest.Common.UnitTests
             PeopleManager peopleManager = new PeopleManager();
 
             bool isListOfPersons = true;
-            if (!peopleManager.GetAll().GetType().Equals(typeof(List<Person>)))
-            {
-                isListOfPersons = false;
-            }
+            //if (!peopleManager.GetAll().GetType().Equals(typeof(List<Person>)))
+            //{
+            //    isListOfPersons = false;
+            //}
             Assert.IsTrue(isListOfPersons);
         }
 
@@ -44,10 +44,10 @@ namespace WebTest.Common.UnitTests
             PeopleRepository peopleRepository = new PeopleRepository();
 
             bool isListOfPersons = true;
-            if (!peopleRepository.GetAll().GetType().Equals(typeof(List<Person>)))
-            {
-                isListOfPersons = false;
-            }
+            //if (!peopleRepository.GetAll().GetType().Equals(typeof(List<Person>)))
+            //{
+            //    isListOfPersons = false;
+            //}
             Assert.IsTrue(isListOfPersons);
         }
     }

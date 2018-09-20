@@ -7,7 +7,7 @@ using WebTest.Model;
 
 namespace WebTest.Repositories.Interfaces
 {
-    public interface IRepositoryBase
+    public interface IPersonRepository
     {
         List<Person> GetAll();
     }

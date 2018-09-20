@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[Person]
+(
+
+	--PK
+	[Id] UNIQUEIDENTIFIER NOT NULL CONSTRAINT [DF_Person_Id] DEFAULT NEWID(),
+	CONSTRAINT [PK_Person] PRIMARY KEY ([Id]),
+
+	--FIELDS
+	[Name] NVARCHAR(20) NOT NULL,
+	[Number] INT NOT NULL
+
+)

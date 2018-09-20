@@ -6,16 +6,17 @@ using System.Web.Mvc;
 using WebTestLayered.ViewModels;
 using WebTest.Model;
 using WebTest.Business;
+using WebTest.Business.Interfaces;
 
 namespace WebTestLayered.Controllers
 {
-    public class PeopleController : Controller
+    public class PersonController : Controller
     {
-        private PeopleManager peopleManager = new PeopleManager();
+        private PersonManager personManager = new PersonManager();
+
         public ActionResult Index()
         {
-            List<Person> persons = peopleManager.GetAll();
-            return View(persons);
+            return View(personManager.GetAll());
         }
 
         public ActionResult About()
