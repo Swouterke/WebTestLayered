@@ -7,6 +7,9 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using WebTest.Model;
+using WebTest.Repositories;
+using WebTest.Business;
+using WebTest.Common.ContainerAndIoC;
 
 namespace WebTestLayered
 {
@@ -14,12 +17,10 @@ namespace WebTestLayered
     {
         protected void Application_Start()
         {
-            //Database.SetInitializer<PersonContext>(new MigrateDatabaseToLatestVersion<PersonContext, WebTest.Model.Migrations.Configuration>());
-
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);           
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace WebTest.Model
 {
-    public class PersonContext : DbContext
+    public class PersonContext : DbContext, IPersonContext
     {
         public DbSet<Person> Person { get; set; }
 

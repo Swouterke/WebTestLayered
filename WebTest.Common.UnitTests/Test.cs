@@ -25,18 +25,18 @@ namespace WebTest.Common.UnitTests
             Assert.IsTrue(isPerson);
         }
 
-        [TestMethod]
-        public void PersonManagerTest()
-        {
-            PersonManager peopleManager = new PersonManager();
+        //[TestMethod]
+        //public void PersonManagerTest()
+        //{
+        //    PersonManager peopleManager = new PersonManager();
 
-            bool isListOfPersons = true;
-            //if (!peopleManager.GetAll().GetType().Equals(typeof(List<Person>)))
-            //{
-            //    isListOfPersons = false;
-            //}
-            Assert.IsTrue(isListOfPersons);
-        }
+        //    bool isListOfPersons = true;
+        //    //if (!peopleManager.GetAll().GetType().Equals(typeof(List<Person>)))
+        //    //{
+        //    //    isListOfPersons = false;
+        //    //}
+        //    Assert.IsTrue(isListOfPersons);
+        //}
 
         [TestMethod]
         public void PersonRepositoryTest()

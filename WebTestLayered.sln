@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTest.Common.UnitTests", 
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "PeopleDatabase", "PeopleDatabase\PeopleDatabase.sqlproj", "{761C33C6-6E02-4489-B5E4-0706FA2FC220}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTest.Common.ContainerAndIoC", "WebTest.Common.ContainerAndIoC\WebTest.Common.ContainerAndIoC.csproj", "{A3D352CD-9467-499E-82E5-FF8620DDA8F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +61,10 @@ Global
 		{761C33C6-6E02-4489-B5E4-0706FA2FC220}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{761C33C6-6E02-4489-B5E4-0706FA2FC220}.Release|Any CPU.Build.0 = Release|Any CPU
 		{761C33C6-6E02-4489-B5E4-0706FA2FC220}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A3D352CD-9467-499E-82E5-FF8620DDA8F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D352CD-9467-499E-82E5-FF8620DDA8F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D352CD-9467-499E-82E5-FF8620DDA8F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D352CD-9467-499E-82E5-FF8620DDA8F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -70,6 +76,7 @@ Global
 		{6D7A4054-8D19-4111-9B43-D1B6F6671DA7} = {11D25AB0-CCE5-4E0A-8BE6-1F0F5B0FAF12}
 		{FFA5C332-4745-4996-82A1-383BC74F118E} = {5BCB0865-04A0-43F3-80D7-EE0121436A4B}
 		{761C33C6-6E02-4489-B5E4-0706FA2FC220} = {6E03FBE7-025C-44DF-9B93-12345C8CA113}
+		{A3D352CD-9467-499E-82E5-FF8620DDA8F4} = {5BCB0865-04A0-43F3-80D7-EE0121436A4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C9D8084E-D96D-4CBF-934D-47C59174FC12}

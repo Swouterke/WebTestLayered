@@ -5,17 +5,24 @@ using System.Text;
 using System.Threading.Tasks;
 using WebTest.Model;
 using WebTest.Repositories;
+using WebTest.Common.ContainerAndIoC;
+using WebTest.Repositories.Interfaces;
 using WebTest.Business.Interfaces;
 
 namespace WebTest.Business
 {
-    public class PersonManager
+    public class PersonManager : IPersonManager
     {
-        private PersonRepository personRepo = new PersonRepository();
+        private readonly IPersonRepository _personRepository;
+
+        public PersonManager(IPersonRepository personRepository)
+        {
+            _personRepository = personRepository;
+        }
 
         public List<Person> GetAll()
         {
-            return personRepo.GetAll();
+            return _personRepository.GetAll();
         }
     }
 }

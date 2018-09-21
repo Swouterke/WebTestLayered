@@ -18,5 +18,6 @@ namespace WebTest.Model
             Name = name;
             Number = number;
         }
+        public Person() { }
     }
 }

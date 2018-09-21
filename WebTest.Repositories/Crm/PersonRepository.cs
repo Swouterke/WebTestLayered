@@ -9,17 +9,19 @@ using WebTest.Repositories.Interfaces;
 
 namespace WebTest.Repositories
 {
-    public class PersonRepository
+    public class PersonRepository : IPersonRepository
     {
+        private readonly IPersonContext _personContext;
+        public PersonRepository(IPersonContext personContext)
+        {
+            _personContext = personContext;
+        }
         public PersonRepository() { }
         public List<Person> GetAll()
         {
             using (var personContext = new PersonContext())
             {
-                if (personContext.Database.Exists())
-                    return (personContext.Person.ToList());
-                else
-                    return new List<Person>();
+                return (personContext.Person.ToList());
             }
         }
     }
