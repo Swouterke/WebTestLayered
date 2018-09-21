@@ -10,5 +10,6 @@ namespace WebTest.Repositories.Interfaces
     public interface IPersonRepository
     {
         List<Person> GetAll();
+        Person GetByName(string name);
     }
 }

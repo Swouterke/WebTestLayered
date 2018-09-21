@@ -11,17 +11,19 @@ namespace WebTest.Repositories
 {
     public class PersonRepository : IPersonRepository
     {
-        private readonly IPersonContext _personContext;
-        public PersonRepository(IPersonContext personContext)
-        {
-            _personContext = personContext;
-        }
         public PersonRepository() { }
         public List<Person> GetAll()
         {
             using (var personContext = new PersonContext())
             {
                 return (personContext.Person.ToList());
+            }
+        }
+        public Person GetByName(string name)
+        {
+            using (var personContext = new PersonContext())
+            {
+                return personContext.Person.Where(p => p.Name == name).FirstOrDefault();
             }
         }
     }

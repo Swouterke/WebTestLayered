@@ -24,5 +24,10 @@ namespace WebTest.Business
         {
             return _personRepository.GetAll();
         }
+
+        public Person GetByName(string name)
+        {
+            return _personRepository.GetByName(name);
+        }
     }
 }

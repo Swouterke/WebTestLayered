@@ -10,5 +10,6 @@ namespace WebTest.Business.Interfaces
     public interface IPersonManager
     {
         List<Person> GetAll();
+        Person GetByName(string name);
     }
 }
